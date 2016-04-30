@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html class="" lang="en">
+
+  <head> 
+ 
+    <title>gdzietrening.pl - wyszukiwarka zajęć sportowych</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/icons.css" rel="stylesheet">
+    <link href="/css/jquery.bxslider.css" rel="stylesheet">
+    <link href="/css/supersized.css" rel="stylesheet">
+    <link href="/css/effect.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/responsive-body.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+    <link href="/css/metro-style.css" rel="stylesheet">
+    <link href="/css/Met-Js.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/trontastic/jquery-ui.css">
+
+    <!-- Js -->
+
+    <script src="/js/jquery.min.js"></script>
+
+  </head>
+  <body class="onepage">
+
+    <input type="hidden" id="day" value="{{day}}">
+    <input type="hidden" id="dayp1" value="{{dayp1}}">
+    <input type="hidden" id="hour" value="{{hour}}">
+    <input type="hidden" id="city" value="{{city}}">
+    <input type="hidden" id="limit" value="{{limit}}">
+
+
+    <div id="preloader"></div>
+    <a id="top"></a>
+
+
+    <!-- HEADER -->
+
+    <section id="home" class="parallax">
+
+      <div class="fullscreen-slider" data-images='["/img/background/home1.jpg","/img/background/home2.jpg","/img/background/home3.jpg"]' data-autoplay="true" data-slideinterval="7000" data-transitionspeed="1500" data-transition="1">
+       <div id="progress-back" class="load-item">
+          <div id="progress-bar"></div>
+        </div>
+      </div>
+      <div class="pattern"></div><div class="overlay"></div>
+      <div id="home-content">
+        
+        <div id="start-page">
+          <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="riz-text-e">
+                      gdzietrening.pl
+                  </div>
+                  <div class="home-text-slider">
+                    <ul class="bxslider" data-auto="true" data-controls="false" data-pager="false">
+                      <li><span>Trening</span> niedaleko Ciebie</li>
+                      <li>Szybka i prosta <span>wyszukiwarka</span></li>
+                      <li>Przejrzysty <span>grafik</span></li>
+                    </ul>
+                  </div>                
+                    <div class="call-action">
+                      <a class="btn-sta scroll" href="#" onclick="renderNow()">#wroclaw teraz</a>
+                      <a class="btn-sta scroll" href="#" onclick="renderTomorrowMorning()">#wroclaw jutro rano</a>
+                      <a class="btn-sta scroll" href="#" onclick="renderTomorrowAfternoon()">#wroclaw jutro po poludniu</a>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        
+        <div id="schedule-page" style="display:none;">
+          <div  style="width:90%;margin: 0 auto;">
+            <!--<div class="call-action">-->
+            <!--    <a class="btn-sta-mod scroll" href="#" onclick="renderTimeline(null, 'mon', 10, 5)">#pon. do poludnia</a>-->
+            <!--    <a class="btn-sta-mod scroll" href="#" onclick="renderTimeline(null, 'tue', 10, 5)">#wto. do poludnia</a>-->
+            <!--    <a class="btn-sta-mod scroll" href="#" onclick="renderTimeline(null, 'wed', 10, 5)">#sro. do poludnia</a>-->
+            <!--    <a class="btn-sta-mod scroll" href="#" onclick="renderTimeline(null, 'thu', 10, 5)">#czw. do poludnia</a>-->
+            <!--    <a class="btn-sta-mod scroll" href="#" onclick="renderTimeline(null, 'fri', 10, 5)">#pia. do poludnia</a>-->
+            <!--    <a class="btn-sta-mod scroll" href="#" onclick="renderTimeline(null, 'sat', 10, 5)">#sob. do poludnia</a>-->
+            <!--    <a class="btn-sta-mod scroll" href="#" onclick="renderTimeline(null, 'sun', 10, 5)">#nie. do poludnia</a>-->
+            <!--</div>-->
+            
+            <div class="call-action">
+              <!--<a class="btn-sta-mod scroll" href="#" onclick="renderTimeline(null, 'mon', 10, 14)">#pon. po poludniu</a>-->
+              <!--<a class="btn-sta-mod scroll" href="#" onclick="renderTimeline(null, 'tue', 10, 14)">#wto. po poludniu</a>-->
+              <!--<a class="btn-sta-mod scroll" href="#" onclick="renderTimeline(null, 'wed', 10, 14)">#sro. po poludniu</a>-->
+              <!--<a class="btn-sta-mod scroll" href="#" onclick="renderTimeline(null, 'thu', 10, 14)">#czw. po poludniu</a>-->
+              <!--<a class="btn-sta-mod scroll" href="#" onclick="renderTimeline(null, 'fri', 10, 14)">#pia. po poludniu</a>-->
+              <!--<a class="btn-sta-mod scroll" href="#" onclick="renderTimeline(null, 'sat', 10, 14)">#sob. po poludniu</a>-->
+              <!--<a class="btn-sta-mod scroll" href="#" onclick="renderTimeline(null, 'sun', 10, 14)">#nie. po poludniu</a>-->
+              
+              <a class="btn-sta-mod scroll" href="#" onclick="moveBackward()"><<</a>
+              <div class="btn-sta-mod scroll" id="chart-day-name"></div>
+              <a class="btn-sta-mod scroll" href="#" onclick="moveForward()">>></a>
+              
+            </div>
+          </div>
+          
+          <div id="chart" style="width:90%;height:500px;margin-left:5%;"></div>
+          <div id="facility-dialog"></div>
+          
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- /HEADER -->
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="pad-hun page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 pad-top">
+            <div class="title-cont clearfix">
+            <h1 data-animated="bounceIn">Let's Get In Touch!</h1>
+            <p class="under-l"  data-animated="bounceIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit<strong> Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit  sit amet, consectetur adipiscing </p><br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="form-container"> 
+            <form id="contact-form" method="post" action="contact.php" class="contact-form">
+              <div class="result"></div>
+                  <div class="col-md-4 pad-top">
+                    <div class="form-group">
+                      <input type="text" name="Name" id="Name"  placeholder="Name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="Email" id="Email"  placeholder="Email" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-md-6 pad-top">
+                    <div class="form-group">
+                      <textarea name="Message" rows="4" cols="5" id="Message"  placeholder="Message" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-2 pad-top">
+                    <div class="form-group">
+                     <input type="submit" name="submit" value="Submit" class="btn btn-dark"  />
+                    </div>
+                  </div>
+              </form>
+            </div>
+        </div>
+        <br><br>
+        <h1 class="under-llll">our via e-mail : you@mail.com</h1><br>
+      </div>
+    </section>
+
+    <!-- /CONTACT -->
+
+
+    <!-- FOOTER -->
+
+    <footer id="footer">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <p id="copyright">
+                  We <strong><i class="icon-heart"></i></strong> Moderno<a class="scroll" href="#home"><img src="/img/tt.png" alt=""></a>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <ul class="socicals">
+                  <li><a href="#" class="icon-facebook"></a></li>
+                  <li><a href="#" class="icon-flickr"></a></li>
+                  <li><a href="#" class="icon-pinterest"></a></li>
+                  <li><a href="#" class="icon-google-plus"></a></li>
+                  <li><a href="#" class="icon-twitter"></a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- /FOOTER -->
+
+
+    <!-- JS -->
+    
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization', 'version':'1.1','packages':['timeline']}]}"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="/js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="/js/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.timelinr-0.9.53.js"></script>
+    <script type="text/javascript" src="/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="/js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/js/retina.min.js"></script>
+    <script type="text/javascript" src="/js/supersized.3.2.7.min.js"></script>
+    <script type="text/javascript" src="/js/supersized.shutter.min.js"></script>
+    <script src="/js/timeline.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="/js/jquery.fittext.js"></script>
+    <script src="/js/jquery.superslides.min.js"></script>
+    <script src="/js/jquery.sudoslider.min.js"></script>
+    <script src="/js/service-js.js"></script>
+    
+    <script src="/js/moment.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+
+  </body>
+</html>

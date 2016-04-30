@@ -1,0 +1,239 @@
+{
+    "name": "Fort Gym - CrossFit Mjollnir",
+    "location": {
+		"city": "Wrocław",
+		"address": "ul. Braniborska 70",
+		"postal": "53-680",
+		"lon": 51.1117887,
+		"lat": 17.0084637
+	},
+    "phone": "+48 695 280 478",
+    "web": "http://www.fortgym.com/",
+    "email": "biuro@fortgym.com",
+    "type": ["CrossFit"],
+    "rating": {
+        "votes": 0,
+        "value": 0
+    },
+    "schedule": {
+        "mon": [
+				{
+				    "name": "ALL LEVEL CLASS",
+				    "time": "07:00-08:00"
+				},
+				{
+				    "name": "OPEN GYM",
+				    "time": "08:00-10:00"
+				},
+                {
+                    "name": "OPEN GYM",
+                    "time": "14:00-16:30"
+                },                
+				{
+				    "name": "LEVEL 1",
+				    "time": "16:30-17:30"
+				},
+                {
+                    "name": "LEVEL 1",
+                    "time": "19:00-20:00"
+                },
+                {
+                    "name": "LEVEL 1",
+                    "time": "21:00-22:00"
+                },
+				{
+				    "name": "PREP. MOBILITY",
+				    "time": "17:30-18:00"
+				},
+				{
+				    "name": "WEIGHTLIFTING",
+				    "time": "18:00-19:00"
+				},
+				{
+				    "name": "LEVEL 2",
+				    "time": "18:00-19:00"
+				},
+				{
+				    "name": "BEGINNER CLASS",
+				    "time": "19:00-20:00"
+				},
+				{
+				    "name": "MOBILITY",
+				    "time": "20:00-21:00"
+				}
+        ],
+        "tue": [
+				{
+				    "name": "ALL LEVEL CLASS",
+				    "time": "07:00-08:00"
+				},
+				{
+				    "name": "OPEN GYM",
+				    "time": "08:00-10:00"
+				},
+                {
+                    "name": "OPEN GYM",
+                    "time": "14:00-16:30"
+                },
+				{
+				    "name": "LEVEL 1",
+				    "time": "16:30-17:30"
+				},
+                {
+                    "name": "LEVEL 1",
+                    "time": "18:00-19:00"
+                },
+                {
+                    "name": "LEVEL 1",
+                    "time": "20:00-21:00"
+                },
+				{
+				    "name": "LEVEL 2",
+				    "time": "19:00-20:00"
+				}
+        ],
+        "wed": [
+				{
+				    "name": "ADVANCE WEIGHTLIFTING",
+				    "time": "07:00-08:30"
+				},
+				{
+				    "name": "ALL LEVEL CLASS",
+				    "time": "08:30-09:30"
+				},
+				{
+				    "name": "OPEN GYM",
+				    "time": "14:00-16:30"
+				},
+				{
+				    "name": "LEVEL 1",
+				    "time": "16:30-17:30"
+				},
+                {
+                    "name": "LEVEL 1",
+                    "time": "18:00-19:00"
+                },
+                {
+                    "name": "LEVEL 1",
+                    "time": "21:00-22:00"
+                },                 
+				{
+				    "name": "WEIGHT LIFTING",
+				    "time": "19:00-20:00"
+				},
+				{
+				    "name": "LEVEL 2",
+				    "time": "19:00-20:00"
+				},
+				{
+				    "name": "MOBILITY",
+				    "time": "20:00-21:00"
+				}
+        ],
+        "thu": [
+				{
+				    "name": "ALL LEVEL CLASS",
+				    "time": "07:00-08:00"
+				},
+				{
+				    "name": "OPEN GYM",
+				    "time": "08:00-10:00"
+				},
+                {
+                    "name": "OPEN GYM",
+                    "time": "14:00-16:30"
+                },
+				{
+				    "name": "LEVEL 1",
+				    "time": "16:30-17:30"
+				},
+                {
+                    "name": "LEVEL 1",
+                    "time": "18:00-19:00"
+                },
+                {
+                    "name": "LEVEL 1",
+                    "time": "20:00-21:00"
+                },
+				{
+				    "name": "LEVEL 2",
+				    "time": "19:00-20:00"
+				}
+        ],
+        "fri": [
+				{
+				    "name": "ADVANCE WEIGHTLIFTING",
+				    "time": "07:00-08:30"
+				},
+				{
+				    "name": "ALL LEVEL CLASS",
+				    "time": "08:30-09:30"
+				},
+				{
+				    "name": "OPEN GYM",
+				    "time": "14:00-16:30"
+				},
+				{
+				    "name": "LEVEL 1",
+				    "time": "16:30-17:30"
+				},
+                {
+                    "name": "LEVEL 1",
+                    "time": "20:00-21:00"
+                },
+				{
+				    "name": "LEVEL 2",
+				    "time": "18:00-19:00"
+				},
+				{
+				    "name": "MOBILITY",
+				    "time": "19:00-20:00"
+				}
+        ],
+        "sat": [
+				{
+				    "name": "ALL LEVEL CLASS",
+				    "time": "10:00-11:00"
+				},
+				{
+				    "name": "OPEN GYM",
+				    "time": "11:00-14:00"
+				}
+        ],
+        "sun": [
+				{
+				    "name": "ALL LEVEL CLASS",
+				    "time": "10:00-11:00"
+				},
+				{
+				    "name": "OPEN GYM",
+				    "time": "11:00-12:00"
+				}
+        ]
+    },
+
+    "openhours": {
+        "mon": ["07:00-09:30", "14:00-22:00"],
+        "tue": ["07:00-09:30", "14:00-22:00"],
+        "wed": ["07:00-09:30", "14:00-22:00"],
+        "thu": ["07:00-09:30", "14:00-22:00"],
+        "fri": ["07:00-09:30", "14:00-22:00"],
+        "sat": ["09:00-12:00"],
+        "sun": ["09:00-12:00"]
+    },
+
+    "systems": [
+		{
+		    "name": "MultiSport",
+		    "payment": "none"
+		},
+		{
+		    "name": "OKSystem",
+		    "payment": "none"
+		},
+		{
+		    "name": "FitProfit",
+		    "payment": "none"
+		}
+    ]
+}

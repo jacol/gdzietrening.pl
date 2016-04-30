@@ -1,0 +1,10 @@
+mongod --quiet --fork --logpath=mongotests.log --bind_ip=$IP --dbpath=data --nojournal --rest "$@"
+
+if [ $# -eq 0 ]; then
+    mocha $(find test -name '*.js')
+else
+    mocha $1
+fi
+
+mongod --shutdown --dbpath=data
+rm -r mongotests.log

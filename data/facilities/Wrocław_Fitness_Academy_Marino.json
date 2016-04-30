@@ -1,0 +1,393 @@
+{
+    "name": "Fitness Academy",
+    "location":{
+		"city": "Wrocław",
+		"address": "ul. Paprotna 7",
+		"postal": "51-117",
+		"lon": 51.1517799,
+		"lat": 17.0262679
+	},
+    "phone": "+48 508 43 77 45",
+    "web": "http://www.fitness-academy.com.pl/pl/kluby/wroclaw/marino/",
+    "type": ["fitness club", "siłownia", "indoor cycling" ],
+    "rating": {
+        "votes": 0,
+        "value": 0
+    },
+    "images": [
+		{
+		    "url": "FacilityImageStore\\1234567.jpg",
+		    "description": "Level 1 podczas rozgrzewki"
+		},
+		{
+		    "url": "FacilityImageStore\\2234567.jpg",
+		    "description": "Level 2 kończy WOD\"a"
+		}
+    ],
+    "schedule": {
+        "mon": [
+				{
+				    "name": "TRENING OBWODOWY",
+				    "time": "08:00-08:55",
+				    "description": "Kamila K."
+				},
+				{
+				    "name": "FA PUMP",
+				    "time": "09:00-09:55",
+				    "description": "Kamila K."
+				},
+				{
+				    "name": "STRETCHING",
+				    "time": "10:00-10:55",
+				    "description": "Kasia"
+				},
+				{
+				    "name": "FIT BALL",
+				    "time": "16:00-16:55",
+				    "description": "Patrycja P."
+				},
+				{
+				    "name": "BODY WORKOUT",
+				    "time": "17:00-17:55",
+				    "description": "Patrycja P."
+				},
+				{
+				    "name": "FA PUMP",
+				    "time": "18:00-18:55",
+				    "description": "Patrycja P."
+				},
+				{
+				    "name": "ABT",
+				    "time": "19:00-19:55",
+				    "description": "Patrycja P."
+				},
+				{
+				    "name": "ZUMBA",
+				    "time": "20:00-20:55",
+				    "description": "Magda"
+				},
+				{
+				    "name": "INDOOR CYCLING HILL",
+				    "time": "18:00-18:55",
+				    "description": "Paweł"
+				},
+				{
+				    "name": "INDOOR CYCLING HIGH",
+				    "time": "19:00-19:55",
+				    "description": "Paweł"
+				},
+				{
+				    "name": "EXPRESS WOD",
+				    "time": "18:00-18:30",
+				    "description": "strefa funkcjonalna"
+				},
+				{
+				    "name": "EXPRESS BRZUCH",
+				    "time": "19:00-19:20",
+				    "description": "strefa funkcjonalna"
+				}
+        ],
+        "tue": [
+				{
+				    "name": "ABT",
+				    "time": "08:00-08:55",
+				    "description": "Sonia"
+				},
+				{
+				    "name": "BODY WORKOUT",
+				    "time": "09:00-09:55",
+				    "description": "Sonia"
+				},
+				{
+				    "name": "ABT",
+				    "time": "17:00-17:55",
+				    "description": "Agnieszka Ź."
+				},
+				{
+				    "name": "BODY WORKOUT",
+				    "time": "18:00-18:55",
+				    "description": "Agnieszka Ź."
+				},
+				{
+				    "name": "PILOXING",
+				    "time": "19:00-19:55",
+				    "description": "Iza K."
+				},
+				{
+				    "name": "ZUMBA",
+				    "time": "20:00-20:55",
+				    "description": "Iza K."
+				},
+				{
+				    "name": "INDOOR CYCLING HILL",
+				    "time": "08:00-08:55",
+				    "description": "Iza D."
+				},
+				{
+				    "name": "INDOOR CYCLING LOW",
+				    "time": "18:00-18:55",
+				    "description": "Monika J."
+				},
+				{
+				    "name": "INDOOR CYCLING MIX CLASS",
+				    "time": "19:00-19:55",
+				    "description": "Monika J."
+				},
+				{
+				    "name": "EXPRESS WOD",
+				    "time": "18:00-18:30",
+				    "description": "strefa funkcjonalna"
+				},
+				{
+				    "name": "EXPRESS BRZUCH",
+				    "time": "19:00-19:20",
+				    "description": "strefa funkcjonalna"
+				}
+        ],
+        "wed": [
+				{
+				    "name": "BODY WORKOUT",
+				    "time": "08:00-08:55",
+				    "description": "Ela"
+				},
+				{
+				    "name": "ABT",
+				    "time": "09:00-09:55",
+				    "description": "Ela"
+				},
+				{
+				    "name": "RELAX JOGA",
+				    "time": "10:00-11:30",
+				    "description": "Iza G."
+				},
+				{
+				    "name": "FIT BALL",
+				    "time": "16:00-16:55",
+				    "description": "Patrycja P."
+				},
+				{
+				    "name": "ZDROWY KRĘGOSŁUP",
+				    "time": "17:00-17:55",
+				    "description": "Agnieszka Ź."
+				},
+				{
+				    "name": "FA PUMP",
+				    "time": "18:00-18:55",
+				    "description": "Agnieszka Ź."
+				},
+				{
+				    "name": "TABATA",
+				    "time": "19:00-19:55",
+				    "description": "Kuba"
+				},
+				{
+				    "name": "ZUMBA",
+				    "time": "20:00-20:55",
+				    "description": "Magda"
+				},
+				{
+				    "name": "INDOOR CYCLING MIX CLASS",
+				    "time": "08:00-08:55",
+				    "description": "Agnieszka L."
+				},
+				{
+				    "name": "INDOOR CYCLING HIGH",
+				    "time": "18:00-18:55",
+				    "description": "Ada A."
+				},
+				{
+				    "name": "INDOOR CYCLING INTERVALL",
+				    "time": "19:00-19:55",
+				    "description": "Ada A."
+				},
+				{
+				    "name": "EXPRESS WOD",
+				    "time": "18:00-18:30",
+				    "description": "strefa funkcjonalna"
+				},
+				{
+				    "name": "EXPRESS BRZUCH",
+				    "time": "19:00-19:20",
+				    "description": "strefa funkcjonalna"
+				}
+        ],
+        "thu": [
+				{
+				    "name": "ABT",
+				    "time": "08:00-08:55",
+				    "description": "Sonia"
+				},
+				{
+				    "name": "BODY WORKOUT",
+				    "time": "09:00-09:55",
+				    "description": "Sonia"
+				},
+				{
+				    "name": "ZUMBA",
+				    "time": "17:00-17:55",
+				    "description": "Agnieszka T."
+				},
+				{
+				    "name": "PILOXING",
+				    "time": "18:00-18:55",
+				    "description": "Agnieszka T."
+				},
+				{
+				    "name": "BODY WORKOUT",
+				    "time": "19:00-19:55",
+				    "description": "Agnieszka Ź."
+				},
+				{
+				    "name": "STEP + BRZUCH",
+				    "time": "20:00-20:55",
+				    "description": "Agnieszka Ź."
+				},
+				{
+				    "name": "INDOOR CYCLING MIX CLASS",
+				    "time": "08:00-08:55",
+				    "description": "FA TEAM"
+				},
+				{
+				    "name": "INDOOR CYCLING MIX CLASS",
+				    "time": "18:00-18:55",
+				    "description": "Aga L."
+				},
+				{
+				    "name": "INDOOR CYCLING HIGH",
+				    "time": "19:00-19:55",
+				    "description": "Aga L."
+				},
+				{
+				    "name": "EXPRESS WOD",
+				    "time": "18:00-18:30",
+				    "description": "strefa funkcjonalna"
+				},
+				{
+				    "name": "EXPRESS BRZUCH",
+				    "time": "19:00-19:20",
+				    "description": "strefa funkcjonalna"
+				}
+        ],
+        "fri": [
+				{
+				    "name": "TRENING OBWODOWY",
+				    "time": "08:00-08:55",
+				    "description": "Mariusz M."
+				},
+				{
+				    "name": "FA PUMP",
+				    "time": "09:00-09:55",
+				    "description": "Mariusz M."
+				},
+				{
+				    "name": "JOGA",
+				    "time": "10:00-11:30",
+				    "description": "Iza G."
+				},
+				{
+				    "name": "ZDROWY KRĘGOSŁUP",
+				    "time": "16:00-16:55",
+				    "description": "Agnieszka Ź."
+				},
+				{
+				    "name": "FA PUMP",
+				    "time": "17:00-17:55",
+				    "description": "Agnieszka Ź."
+				},
+				{
+				    "name": "BODY WORKOUT",
+				    "time": "18:00-18:55",
+				    "description": "Sonia"
+				},
+				{
+				    "name": "STEP BASIC",
+				    "time": "19:00-19:55",
+				    "description": "Sonia"
+				},
+				{
+				    "name": "STRETCHING",
+				    "time": "20:00-20:55",
+				    "description": "Sonia"
+				},
+				{
+				    "name": "INDOOR CYCLING MIX CLASS",
+				    "time": "18:00-18:55",
+				    "description": "Paweł"
+				},
+				{
+				    "name": "EXPRESS WOD",
+				    "time": "18:00-18:30",
+				    "description": "strefa funkcjonalna"
+				},
+				{
+				    "name": "EXPRESS BRZUCH",
+				    "time": "19:00-19:20",
+				    "description": "strefa funkcjonalna"
+				}
+        ],
+        "sat": [
+				{
+				    "name": "BODY WORKOUT",
+				    "time": "09:00-09:55",
+				    "description": "Ela"
+				},
+				{
+				    "name": "TRENING OBWODOWY",
+				    "time": "10:00-10:55",
+				    "description": "Kamila K."
+				},
+				{
+				    "name": "ABT",
+				    "time": "18:00-18:55",
+				    "description": "Sonia"
+				},
+				{
+				    "name": "BODY WORKOUT",
+				    "time": "19:00-19:55",
+				    "description": "Sonia"
+				},
+				{
+				    "name": "INDOOR CYCLING MIX CLASS",
+				    "time": "18:00-18:55",
+				    "description": "FA TEAM"
+				}
+        ],
+        "sun": [
+				{
+				    "name": "ABT",
+				    "time": "09:00-09:55",
+				    "description": "Kamila K."
+				},
+				{
+				    "name": "FIT BALL",
+				    "time": "10:00-10:55",
+				    "description": "Kamila K."
+				},
+				{
+				    "name": "BODY WORKOUT",
+				    "time": "18:00-18:55",
+				    "description": "Kamila K."
+				}
+        ]
+    },
+    "openhours": {
+        "mon": ["06:00-23:00"],
+        "tue": ["06:00-23:00"],
+        "wed": ["06:00-23:00"],
+        "thu": ["06:00-23:00"],
+        "fri": ["06:00-23:00"],
+        "sat": ["08:00-21:00"],
+        "sun": ["08:00-20:00"]
+    },
+
+    "systems": [
+		{
+		    "name": "MultiSport",
+		    "payment": "none"
+		},
+		{
+		    "name": "Be Active",
+		    "payment": "none"
+		}
+    ]
+}

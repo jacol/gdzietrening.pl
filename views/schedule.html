@@ -1,0 +1,924 @@
+
+<!DOCTYPE html>
+<html class="" lang="en">
+
+  <head> 
+ 
+    <title>gdzietrening.pl - wyszukiwarka zajęć sportowych</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/icons.css" rel="stylesheet">
+    <link href="/css/jquery.bxslider.css" rel="stylesheet">
+    <link href="/css/supersized.css" rel="stylesheet">
+    <link href="/css/effect.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/responsive-body.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+    <link href="/css/metro-style.css" rel="stylesheet">
+    <link href="/css/Met-Js.css" rel="stylesheet">
+
+    <!-- Js -->
+
+    <script src="/js/jquery.min.js"></script>
+
+  </head>
+  <body class="onepage">
+
+    <input type="hidden" id="day" value="{{day}}">
+    <input type="hidden" id="hour" value="{{hour}}">
+    <input type="hidden" id="city" value="{{city}}">
+    <input type="hidden" id="limit" value="{{limit}}">
+
+
+    <div id="preloader"></div>
+    <a id="top"></a>
+
+
+    <!-- HEADER -->
+
+    <section id="home" class="parallax">
+
+      <div class="fullscreen-slider" data-images='["/img/background/home1.jpg","/img/background/home2.jpg","/img/background/home3.jpg"]' data-autoplay="true" data-slideinterval="7000" data-transitionspeed="1500" data-transition="1">
+       <div id="progress-back" class="load-item">
+          <div id="progress-bar"></div>
+        </div>
+      </div>
+      <div class="pattern"></div><div class="overlay"></div>
+      <div id="home-content">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="riz-text-e">
+                    Just Another WebSite Theme ...
+                </div>
+                <div class="home-text-slider">
+                  <ul class="bxslider" data-auto="true" data-controls="false" data-pager="false">
+                    <li>This is <span>Moderno</span> Theme</li>
+                    <li>A <span>Unique </span> and Creative Work</li>
+                  </ul>
+                </div>                
+                  <div class="call-action">
+                    <a class="btn-sta scroll" href="#schedule">s z u k a j ...</a>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /HEADER -->
+
+
+    <!-- NAV -->
+
+  <!--  <nav id="nav-desktop" class="nav-slide">-->
+  <!--    <div class="container">-->
+  <!--      <ul>-->
+  <!--        <li><a href="#about"><span> About Us</span></a></li>-->
+  <!--        <li><a href="#team"><span>Our Team</span></a></li>-->
+  <!--        <li><a href="#services"><span>Services</span></a></li>-->
+  <!--        <li><a href="#portfolio"><span>Portfolio</span></a></li>-->
+  <!--        <li><a href="#price"><span>Pricing</span></a></li>-->
+  <!--        <li><a href="#contact"><span>Contact Us</span></a></li>-->
+
+  <!--        <li class="mimi"><a class="mimi" href=""><span><br><br><br><br></span></a></li>-->
+  <!--        <li><p><br>-->
+  <!--          <a class="mimi" href=""><span class="icon-twitter"></span><br></a>-->
+  <!--          <a class="mimi" href=""><span class="icon-facebook"></span><br></a>-->
+  <!--          <a class="mimi" href=""><span class="icon-youtube"></span><br><br><br><br></a></p>-->
+  <!--        </li>-->
+  <!--      </ul>-->
+  <!--    </div>-->
+  <!--  </nav>-->
+
+    <!-- /NAV -->
+
+
+    <!-- ABOUT -->
+
+  <!--  <section id="about" class="page-i">-->
+  <!--    <div class="container">-->
+  <!--      <div class="row">-->
+  <!--        <div class="col-md-12 pad-top">-->
+  <!--          <div class="title clearfix">-->
+  <!--            <h1 data-animated="bounceIn">What is Moderno ?</h1>-->
+  <!--          <p class="under-l"  data-animated="bounceIn">a <strong>Creative</strong> Theme, That's What We Are</p>-->
+  <!--            <img src="/img/lina.png" alt="">-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--      <div class="row ">-->
+  <!--        <div id="about-wrap" class="pad-top pad-bottom">-->
+  <!--          <div class="col-md-3 col-sm-3 col-xs-12">-->
+  <!--            <div class="service-icon">-->
+  <!--                <span class="icon-gear"></span>-->
+  <!--                <img class="a-i" src="/img/a-i-1.png" alt="">-->
+  <!--                <h2>Development</h2>-->
+  <!--                <p>Nullam bibendum porta magna. bibendum</p>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--          <div class="col-md-3 col-sm-3 col-xs-12">-->
+  <!--            <div class="service-icon">-->
+  <!--                <span class="icon-mobile"></span>-->
+  <!--                <img class="a-i" src="/img/a-i-2.png" alt="">-->
+  <!--                <h2>Designing</h2>-->
+  <!--                <p>Praesent faucibus sollicitudin  bibendum porta magna. Praesent</p>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--          <div class="col-md-3 col-sm-3 col-xs-12">-->
+  <!--            <div class="service-icon">-->
+  <!--                <span class="icon-book"></span>-->
+  <!--                <img class="a-i" src="/img/a-i-3.png" alt="">-->
+  <!--                <h2>Coding</h2>-->
+  <!--                <p>Faucibus nisl sit  magna. Praesent magna</p>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--          <div class="col-md-3 col-sm-3 col-xs-12">-->
+  <!--            <div class="service-icon">-->
+  <!--                <span class="icon-pencil"></span>-->
+  <!--                <img class="a-i" src="/img/a-i-4.png" alt="">-->
+  <!--                <h2>Planning</h2>-->
+  <!--                <p>Praesent faucibus  magna. Praesent amet sollicitudin</p>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--        <div class="pad-hun-s pad-hun-9 pad-top"><br>-->
+  <!--          <p class="under-l"  data-animated="bounceIn">We creat experinces that transform<br> brands,<strong> grow businesses</strong> and make people Live's Better ...</p>-->
+  <!--          <div class="col-sm-4 col-xs-4 col-md-4 under-sec" data-animated="rotateInUpRight">-->
+  <!--            <img src="/img/smart-2.png" alt="">-->
+  <!--          </div>-->
+  <!--          <div class="col-sm-8 col-xs-8 col-md-8 under-sec n-show" data-animated="rotateInUpLeft">-->
+  <!--            <img src="/img/let-1.png" alt="">-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--    </div>-->
+  <!--  </section>-->
+
+    <!-- /ABOUT -->
+
+
+    <!-- SKILLS -->
+
+    <!--<section class="pad-hun page-ski">-->
+    <!--  <div class="container">-->
+    <!--    <div class="row">-->
+    <!--      <div class="col-md-6 pad-top">-->
+    <!--       <div class="col-md-12 pad-top">-->
+    <!--        <div class="title-sk clearfix">-->
+    <!--          <h1>Some Of Our Skills</h1>-->
+    <!--          <img src="/img/lina.png" alt="">-->
+    <!--        </div>-->
+    <!--        <h1 class="under-lll-sk">We have more than 5 years experience with the best Clients and Coms. </h1>-->
+    <!--       </div>-->
+    <!--     </div>-->
+          
+    <!--  </div>-->
+    <!--</div>-->
+    <!--</section>-->
+
+    <!-- /SKILLS -->
+
+
+    <!-- TEAM -->
+
+  <!--  <section id="team" class="page">-->
+  <!--    <div class="container">-->
+  <!--      <div class="row">-->
+  <!--        <div class="col-md-12 pad-top">-->
+  <!--        <div class="title-team clearfix pad-top">-->
+  <!--          <h1 data-animated="bounceIn">Who are We?</h1>-->
+  <!--          <p class="under-l"  data-animated="bounceIn">Professional <strong>designers </strong>who focuses on crafting experiences </p>-->
+  <!--          <img src="/img/lina.png" alt="">-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--    <div class="fullwidth">-->
+  <!--      <div class="container">-->
+  <!--        <div id="team-list" class="row pad-bottom pad-hun">-->
+  <!--          <article class="col-sm-6 col-xs-12 col-md-3">-->
+  <!--            <div class="mem-item">-->
+  <!--              <div class="mem-avatar bwWrapper">-->
+  <!--                <img src="/img/team/1.jpg" alt="">-->
+  <!--              </div>-->
+  <!--              <div class="mem-info">-->
+  <!--                <h4 class="mem-name">BAHAREH CHARITY</h4><br>-->
+  <!--                      <h1 class="golale">follow me on:</h1><br>-->
+  <!--                    <div class="socicals">-->
+  <!--                      <ul>-->
+  <!--                      <li><a href="#" class="icon-facebook"></a></li>-->
+  <!--                      <li><a href="#" class="icon-google-plus"></a></li>-->
+  <!--                      <li><a href="#" class="icon-twitter"></a></li>-->
+  <!--                      <li><a href="#" class="icon-github"></a></li>-->
+  <!--                      </ul>-->
+  <!--                     </div>-->
+  <!--                   <div class="mem-details">-->
+  <!--                    <div class="socicals">-->
+  <!--                      <h1 class="mem-matn">Developer</h1><br>-->
+  <!--                      <img src="/img/lina.png" alt=""><br>-->
+  <!--                      <h5 class="mize">process of communicating<br>the value of a product <br>or service to customers ...</h5>-->
+  <!--                      <i class="mem-sign"><img src="/img/bah-si.png" alt=""></i>-->
+  <!--                    </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--          </article>-->
+  <!--          <article class="col-sm-6 col-xs-12 col-md-3">-->
+  <!--            <div class="mem-item">-->
+  <!--              <div class="mem-avatar bwWrapper">-->
+  <!--                <img src="/img/team/2.jpg" alt="">-->
+  <!--              </div>-->
+  <!--              <div class="mem-info">-->
+  <!--                <h4 class="mem-name">Soheil Moradi</h4><br>-->
+  <!--                      <h1 class="golale">follow me on:</h1><br>-->
+  <!--                    <div class="socicals">-->
+  <!--                      <ul>-->
+  <!--                      <li><a href="#" class="icon-facebook"></a></li>-->
+  <!--                      <li><a href="#" class="icon-twitter"></a></li>-->
+  <!--                      <li><a href="#" class="icon-github"></a></li>-->
+  <!--                      </ul>-->
+  <!--                     </div>-->
+  <!--                   <div class="mem-details">-->
+  <!--                    <div class="socicals">-->
+  <!--                      <h1 class="mem-matn">Co-Founder</h1><br>-->
+  <!--                      <img src="/img/lina.png" alt=""><br>-->
+  <!--                      <h5 class="mize">process of communicating<br>the value of a product <br>or service to customers ...</h5>-->
+  <!--                      <i class="mem-sign"><img src="/img/soh-si.png" alt=""></i>-->
+  <!--                    </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--          </article>-->
+  <!--          <article class="col-sm-6 col-xs-12 col-md-3">-->
+  <!--            <div class="mem-item">-->
+  <!--              <div class="mem-avatar bwWrapper">-->
+  <!--                <img src="/img/team/3.jpg" alt="">-->
+  <!--              </div>-->
+  <!--              <div class="mem-info">-->
+  <!--                <h4 class="mem-name">Mariana Ti.</h4><br>-->
+  <!--                      <h1 class="golale">follow me on:</h1><br>-->
+  <!--                    <div class="socicals">-->
+  <!--                      <ul>-->
+  <!--                      <li><a href="#" class="icon-facebook"></a></li>-->
+  <!--                      <li><a href="#" class="icon-google-plus"></a></li>-->
+  <!--                      <li><a href="#" class="icon-twitter"></a></li>-->
+  <!--                      <li><a href="#" class="icon-linkedin"></a></li>-->
+  <!--                      </ul>-->
+  <!--                     </div>-->
+  <!--                   <div class="mem-details">-->
+  <!--                    <div class="socicals">-->
+  <!--                      <h1 class="mem-matn">Designer</h1><br>-->
+  <!--                      <img src="/img/lina.png" alt=""><br>-->
+  <!--                      <h5 class="mize">process of communicating<br>the value of a product <br>or service to customers ...</h5>-->
+  <!--                      <i class="mem-sign"><img src="/img/mar-si.png" alt=""></i>-->
+  <!--                    </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--          </article>-->
+  <!--          <article class="col-sm-6 col-xs-12 col-md-3">-->
+  <!--            <div class="mem-item">-->
+  <!--              <div class="mem-avatar bwWrapper">-->
+  <!--                <img src="/img/team/4.jpg" alt="">-->
+  <!--              </div>-->
+  <!--              <div class="mem-info">-->
+  <!--                <h4 class="mem-name">BAHAREH CHARITY</h4><br>-->
+  <!--                      <h1 class="golale">follow me on:</h1><br>-->
+  <!--                    <div class="socicals">-->
+  <!--                      <ul>-->
+  <!--                      <li><a href="#" class="icon-facebook"></a></li>-->
+  <!--                      <li><a href="#" class="icon-google-plus"></a></li>-->
+  <!--                      <li><a href="#" class="icon-github"></a></li>-->
+  <!--                      </ul>-->
+  <!--                     </div>-->
+  <!--                   <div class="mem-details">-->
+  <!--                    <div class="socicals">-->
+  <!--                      <h1 class="mem-matn">Marketing</h1><br>-->
+  <!--                      <img src="/img/lina.png" alt=""><br>-->
+  <!--                      <h5 class="mize">process of communicating<br>the value of a product <br>or service to customers ...</h5>-->
+  <!--                      <i class="mem-sign"><img src="/img/bah-si.png" alt=""></i>-->
+  <!--                    </div>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--          </article>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--</section>-->
+  <!--        <div class="col-md-12 page-ligh res-pic">-->
+  <!--          <p class="under-l"  data-animated="bounceIn">we work together as a <strong>Creative</strong> and professional Team<br> To creat awesome and High quality premium Themes that are easy to use ...</p><br><br><br>-->
+  <!--          <h1 class="center-text"><img src="/img/ip.png" alt="" data-animated="flipInX"></h1>-->
+  <!--        </div>-->
+  <!--        <div class="col-md-12 page-gl pad-bottom">-->
+  <!--          <div id="counter-wrap" class="pad-top">-->
+  <!--            <div class="col-sm-3 col-md-3">-->
+  <!--              <div class="stat-counter white" data-num="32276">-->
+  <!--                <span class="number">32276</span>-->
+  <!--                <h3 data-animated="bounceIn">Satisfied Customers</h3>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--            <div class="col-sm-3 col-md-3">-->
+  <!--              <div class="stat-counter white" data-num="10734">-->
+  <!--                <span class="number">10734</span>-->
+  <!--                <h3 data-animated="bounceIn">Served Coffees</h3>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--            <div class="col-sm-3 col-md-3">-->
+  <!--              <div class="stat-counter white" data-num="59">-->
+  <!--                <span class="number">59</span>-->
+  <!--                <h3 data-animated="bounceIn">Under-C Projects</h3>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--            <div class="col-sm-3 col-md-3">-->
+  <!--              <div class="stat-counter white" data-num="52265">-->
+  <!--                <span class="number">52265</span>-->
+  <!--                <h3 data-animated="bounceIn">Products</h3>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--        </div>-->
+
+    <!-- /TEAM -->
+
+
+    <!-- CUOTE -->
+
+    <div id="schedule" class="page-yx">
+      <div class="parallax_wrap">
+        <div class="container">
+          <div class="row pad-hun">
+              <div id="timeline" style="width=80%;height: 500px;margin-top:20px;"></div>
+            <!--<p class="under-j" data-animated="bounceIn">'The goal is to add those details which help users identify what an element is, and how to interact with it, and to add no more than those details'</p>-->
+            <!--<p class="under-jj"   data-animated="bounceIn">- Lukas Mathis -</p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /CUOTE -->
+
+
+    <!-- SERVICES -->
+
+  <!--  <section id="services" class="page pad-bottom-2">-->
+  <!--    <div class="container">-->
+  <!--      <div class="row">-->
+  <!--        <div class="col-md-12 pad-top">-->
+  <!--        <div class="title-serv clearfix">-->
+  <!--          <h1 data-animated="bounceIn">Our Process</h1>-->
+  <!--          <p class="under-l"  data-animated="bounceIn">We Creat<strong> Premium Brands, </strong>Identities and Websites in a Creative Design studio ... </p>-->
+  <!--          <img src="/img/lina.png" alt=""><br><br>-->
+  <!--        </div>-->
+  <!--        </div>-->
+  <!--    <div class="service-halat pad-top-s col-sm-6 col-xs-12 col-md-6">-->
+  <!--      <i class="icon-html5"></i>-->
+  <!--      <h3>Technology </h3>-->
+  <!--      <h5>Lorem ipsum dolor sit amet, magna aliquam  erat volutpat nibh euismod</h5>-->
+  <!--    </div>-->
+  <!--    <div class="service-halat-r pad-top-s col-sm-6 col-xs-12 col-md-6">-->
+  <!--      <i class="icon-puzzle-piece"></i>-->
+  <!--      <h3>a Discovery </h3>-->
+  <!--      <h5>Lorem ipsum dolor sit amet, aliquam  erat volutpat nibh euismodtincidunt ut </h5>-->
+  <!--    </div>-->
+  <!--    <div class="service-halat-d pad-top col-sm-6 col-xs-12 col-md-6">-->
+  <!--      <i class="icon-lightbulb"></i>-->
+  <!--      <h3>Planning </h3>-->
+  <!--      <h5>Lorem ipsum dolor sit amet, magna aliquam  erat volutpat nibh euismod tincidunt ut laoreet doloreLorem</h5>-->
+  <!--    </div>-->
+  <!--    <div class="service-halat-r-d pad-top col-sm-6 col-xs-12 col-md-6">-->
+  <!--      <i class="icon-key"></i>-->
+  <!--      <h3>Success </h3>-->
+  <!--      <h5>Lorem ipsum dolor sit amet, aliquam  erat volutpat nibh euismodtincidunt ut </h5>-->
+  <!--    </div>-->
+  <!--      </div><br><br>-->
+  <!--    </div>-->
+  <!--  </section>-->
+  <!--  <div class="clear"></div>-->
+
+  <!--  <div class="page-yz">-->
+  <!--    <div class="parallax_wrap">-->
+  <!--      <div class="container">-->
+  <!--      <div class="row">-->
+  <!--       <section id="service-section" class="service-section content-section ha-waypoint services">-->
+  <!--         <div class="grid-container">-->
+  <!--       <div class="col-sm-12 col-xs-12 col-md-6">-->
+  <!--        <div class="col-sm-12 col-xs-12 col-md-12">-->
+  <!--          <div class="services-buttons">-->
+  <!--              <a data-animated="fadeInLeft" data-rel="1" href="javascript:void(0);" class="servicesLink"><i class="icon-rocket"></i></a>-->
+  <!--              <a data-animated="fadeInLeft" data-rel="2" href="javascript:void(0);" class="servicesLink"><i class="icon-book"></i></a>-->
+  <!--              <a data-animated="bounceIn" data-rel="3" href="javascript:void(0);" class="servicesLink"><i class="icon-search"></i></a>-->
+  <!--          </div>-->
+  <!--      </div>-->
+  <!--     <div class="col-sm-12 col-xs-12 col-md-12">-->
+  <!--          <div id="services-slider" data-animated="fadeInLeft" class="box-fade ten columns offset-by-one">-->
+  <!--              <ul>-->
+  <!--                  <li>-->
+  <!--                      <h3 class="text-ser-2">Launching</h3>-->
+  <!--                      <h3 class="text-ser-1"><br>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet doloreLorem ipsum dolor sit amet,  magna aliquam erat volutpat nibh euismod</h3>-->
+  <!--                   </li>-->
+  <!--                  <li>-->
+  <!--                      <h3 class="text-ser-2">Programming Projects</h3>-->
+  <!--                      <h3 class="text-ser-1"><br>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet doloreLorem ipsum dolor sit amet,  magna aliquam erat volutpat nibh euismod </h3>-->
+  <!--                  </li>-->
+  <!--                  <li>-->
+  <!--                      <h3 class="text-ser-2">Developement</h3>-->
+  <!--                      <h3 class="text-ser-1"><br>consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet doloreLorem ipsum dolor sit amet,  magna aliquam erat volutpat nibh </h3>-->
+  <!--                  </li>-->
+  <!--              </ul>-->
+  <!--          </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--    <div class="my-mon col-sm-12 col-xs-12 col-md-6">-->
+  <!--      <img src="/img/pt-1.png" alt="">-->
+  <!--    </div>-->
+  <!--         </div>-->
+  <!--      </section>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+
+    <!-- /SERVICES -->
+
+
+    <!-- PORTFOLIO -->
+
+  <!--  <section id="portfolio" class="page">-->
+  <!--    <div class="container">-->
+  <!--      <div class="row">-->
+  <!--        <div class="col-md-12 pad-top">-->
+  <!--          <div class="title-folio clearfix">-->
+  <!--          <h1 data-animated="bounceIn">Our Portfolio</h1>-->
+  <!--          <p class="under-l"  data-animated="bounceIn">We have No Philosophical Statement to Offer, We Let<strong> Our Work </strong>Speak For Us ... </p>-->
+  <!--        </div>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--    <div id="portfolio-wrap">-->
+  <!--      <div id="portfolio-page">-->
+  <!--        <div id="portfolio-content">-->
+  <!--          <div class="container"> -->
+  <!--            <div id="protfolio-control">-->
+  <!--              <div class="row">-->
+  <!--                <div class="col-md-4 col-sm-4 col-xs-4">-->
+  <!--                  <a href="#" id="prev-project" title="Previous Project"><i class="icon-chevron-left"></i></a>-->
+  <!--                </div>-->
+  <!--                <div class="col-md-4 col-sm-4 col-xs-4 text-center">-->
+  <!--                  <a href="#" id="close-project" title="Close Project"><i class="icon-remove"></i></a>-->
+  <!--                </div>-->
+  <!--                <div class="col-md-4 col-sm-4 col-xs-4 text-right">-->
+  <!--                  <a href="#" id="next-project" title="Next Project"><i class="icon-chevron-right"></i></a>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--            <div id="portfolio-ajax"></div>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--    <div id="portfolio-filter">-->
+  <!--      <div class="container">-->
+  <!--        <div class="row text-center">-->
+  <!--          <div class="col-md-12">-->
+  <!--            <ul class="portfolio-filter-list">-->
+  <!--                <li><a class="active" href="#" data-cat="*"><i class="icon-list"></i></a></li>-->
+  <!--                <li><a href="#" data-cat="design"><i class="icon-camera"></i></a></li>-->
+  <!--                <li><a href="#" data-cat="photo"><i class="icon-heart-empty"></i></a></li>-->
+  <!--                <li><a href="#" data-cat="video"><i class="icon-android"></i></a></li>-->
+  <!--                <li><a href="#" data-cat="web"><i class="icon-facetime-video"></i></a></li>-->
+  <!--                <li><a href="#" data-cat="project"><i class="icon-link"></i></a></li>-->
+  <!--            </ul>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--    <div id="portfolio-items" class="portfolio-items">-->
+  <!--      <article class="design photo">-->
+  <!--        <a href="work1.html">-->
+  <!--          <img src="/img/portfolio/thumb/thumb1.jpg" alt="image">-->
+  <!--          <div class="overlay mid-v">-->
+  <!--            <i class="h-photo icon-camera"></i>-->
+  <!--            <h3>Work Number 57</h3>-->
+  <!--          </div>-->
+  <!--        </a>-->
+  <!--      </article>-->
+  <!--      <article class="photo video">-->
+  <!--        <a href="work2.html">-->
+  <!--          <img src="/img/portfolio/thumb/thumb2.jpg" alt="image">-->
+  <!--          <div class="overlay mid-v">-->
+  <!--            <i class="h-photo icon-heart-empty"></i>-->
+  <!--            <h3>Work Number 13</h3>-->
+  <!--          </div>-->
+  <!--        </a>-->
+  <!--      </article>-->
+  <!--      <article class="video web">-->
+  <!--        <a href="work-video.html">-->
+  <!--          <img src="/img/portfolio/thumb/thumb8.jpg" alt="image">-->
+  <!--          <div class="overlay mid-v">-->
+  <!--            <i class="h-photo icon-facetime-video"></i>-->
+  <!--            <h3>Work Number 545</h3>-->
+  <!--          </div>-->
+  <!--        </a>-->
+  <!--      </article>-->
+  <!--      <article class="photo">-->
+  <!--        <a href="work4.html">-->
+  <!--          <img src="/img/portfolio/thumb/thumb4.jpg" alt="image">-->
+  <!--          <div class="overlay mid-v">-->
+  <!--            <i class="h-photo icon-heart-empty"></i>-->
+  <!--            <h3>Work Number 876</h3>-->
+  <!--          </div>-->
+  <!--        </a>-->
+  <!--      </article>-->
+  <!--      <article class="project video">-->
+  <!--        <a href="work5.html">-->
+  <!--          <img src="/img/portfolio/thumb/thumb5.jpg" alt="image">-->
+  <!--          <div class="overlay mid-v">-->
+  <!--            <i class="h-photo icon-link"></i>-->
+  <!--            <h3>Work Number 004</h3>-->
+  <!--          </div>-->
+  <!--        </a>-->
+  <!--      </article>-->
+  <!--      <article class="web video">-->
+  <!--        <a href="work-video.html">-->
+  <!--          <img src="/img/portfolio/thumb/thumb6.jpg" alt="image">-->
+  <!--          <div class="overlay mid-v">-->
+  <!--            <i class="h-photo icon-facetime-video"></i>-->
+  <!--            <h3>Work Number 233</h3>-->
+  <!--          </div>-->
+  <!--        </a>-->
+  <!--      </article>-->
+  <!--      <article class="photo video">-->
+  <!--        <a href="work7.html">-->
+  <!--          <img src="/img/portfolio/thumb/thumb7.jpg" alt="image">-->
+  <!--          <div class="overlay mid-v">-->
+  <!--            <i class="h-photo icon-heart-empty"></i>-->
+  <!--            <h3>Work Number 90</h3>-->
+  <!--          </div>-->
+  <!--        </a>-->
+  <!--      </article>-->
+  <!--      <article class="video design project">-->
+  <!--        <a href="work8.html">-->
+  <!--          <img src="/img/portfolio/thumb/thumb3.jpg" alt="image">-->
+  <!--          <div class="overlay mid-v">-->
+  <!--            <i class="h-photo icon-android"></i>-->
+  <!--            <h3>Work Number 2233</h3>-->
+  <!--          </div>-->
+  <!--        </a>-->
+  <!--      </article>-->
+  <!--    </div>-->
+  <!--   <div class="more-folio"><i class="icon-plus-sign"></i></div>-->
+  <!--  </section>-->
+
+    <!-- /PORTFOLIO -->
+
+
+    <!-- VIDEO-BG -->
+
+  <!--  <section id="vg" class="parallax">-->
+  <!--    <div class="bg-video">-->
+  <!--      <video muted loop="loop" autoplay class="video"><source type="video/webm" src="video/1.webm"></video>-->
+  <!--    </div><div class="pattern-v"></div><div class="overlay"></div>-->
+  <!--    <div id="home-content-vg">-->
+  <!--      <div class="container">-->
+  <!--          <div class="row">-->
+  <!--            <div class="col-md-12">-->
+  <!--              <div class="home-text-slider" data-animated="fadeIn">-->
+  <!--                <ul class="bx-v" data-auto="true" data-controls="false" data-pager="false">-->
+  <!--                  <li>Like Moderno? You Can <span>Purchase It</span> Here ...</li>-->
+  <!--                 </ul>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--            <div class="col-md-12" data-animated="fadeIn">-->
+  <!--              <div class="vasat">-->
+  <!--                <div class="call-action">-->
+  <!--                  <a class="btn-purch" href="http://themeforest.net/user/ThemeCafe/portfolio">Purchase Moderno</a>-->
+  <!--                </div>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </section>-->
+
+    <!-- /VIDEO-BG -->
+
+    <!-- BLOG -->
+
+  <!--  <div class="page pad-top-s pad-bottom-2 pad-hun-p">-->
+  <!--    <div class="blog-bg">-->
+  <!--      <div class="container">-->
+  <!--          <div class="row">-->
+  <!--          <div class="col-md-6 col-sm-6 pad-top">-->
+  <!--            <div class="blog-ic" data-animated="fadeInLeft">-->
+  <!--                <a href="blog-post.html">-->
+  <!--                <span>03<br>May</span>-->
+  <!--                <h3>Blog Post #21</h3>-->
+  <!--                <p>Lorem ipsum sit temporibus amet. volutpat sit  <br> Vitae, eius perferendis temporibus </p>-->
+  <!--                </a>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--          <div class="col-md-6 col-sm-6 pad-top">-->
+  <!--            <div class="blog-ic" data-animated="fadeInLeft">-->
+  <!--                <a href="blog-post.html">-->
+  <!--                <span>26<br>jun</span>-->
+  <!--                <h3>Blog Post #06</h3>-->
+  <!--                <p>Lorem ipsum dolor sit amet. volutpat sit amet Vitae dolor<br> eius perferendis sequi magn? </p>-->
+  <!--                </a>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--          </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+
+    <!-- /BLOG -->
+
+
+    <!-- CLIENTS -->
+
+  <!--  <div id="testimonials" class="page-cli pad-top-p">-->
+  <!--    <div class="pad-bottom-2">-->
+  <!--      <div class="container">-->
+  <!--        <div class="row">-->
+  <!--        <div class="col-md-12">-->
+  <!--          <div class="title-tes clearfix pad-top"> -->
+  <!--             <h1 data-animated="bounceIn">OUR CLIENTS</h1>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--            <div class="testimonials-slider" data-animated="fadeInRight">-->
+  <!--                <ul class="bxslider" data-controls="false" data-pager="true" data-auto="true" data-speed="500">-->
+  <!--                  <li>-->
+  <!--                    <img src="/img/te-1.jpg" alt="">-->
+  <!--                    <p>The Nicest Theme I ever worked with and I have worked with A lot of themes ... </p>-->
+  <!--                    <span class="name">Soheil MRD - Founder</span>-->
+  <!--                  </li>-->
+  <!--                  <li>-->
+  <!--                    <img src="/img/te-2.jpg" alt="">-->
+  <!--                    <p>A great Job! Really Beautiful and Useful ... </p>-->
+  <!--                    <span class="name">Mariana Mah - Manager</span>-->
+  <!--                  </li>-->
+  <!--                  <li>-->
+  <!--                    <img src="/img/te-3.jpg" alt="">-->
+  <!--                    <p>This is one of That Awesome Things that I Love for ever ...</p>-->
+  <!--                    <span class="name">Jack ch - Developer</span>-->
+  <!--                  </li>-->
+  <!--                </ul>-->
+  <!--            </div>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+
+    <!-- /CLIENTS -->
+
+
+    <!-- LOGOS -->
+
+  <!--  <div class="page pad-top-p pad-bottom pad-hun-s">-->
+  <!--    <div class="page">-->
+  <!--      <div class="container">-->
+  <!--          <div class="row">-->
+  <!--            <div class="col-sm-4 col-xs-6 col-md-2 opa-8">-->
+  <!--              <h1 class="center-text"><img src="/img/logos/tf.png" alt=""></h1>-->
+  <!--            </div>-->
+  <!--            <div class="col-sm-4 col-xs-6 col-md-2 opa-8">-->
+  <!--              <h1 class="center-text"><img src="/img/logos/aj.png" alt=""></h1>-->
+  <!--            </div>-->
+  <!--            <div class="col-sm-4 col-xs-6 col-md-2 opa-8">-->
+  <!--              <h1 class="center-text"><img src="/img/logos/ad.png" alt=""></h1>-->
+  <!--            </div>-->
+  <!--            <div class="col-sm-4 col-xs-6 col-md-2 opa-8">-->
+  <!--              <h1 class="center-text"><img src="/img/logos/gr.png" alt=""></h1>-->
+  <!--            </div>-->
+  <!--            <div class="col-sm-4 col-xs-6 col-md-2 opa-8">-->
+  <!--              <h1 class="center-text"><img src="/img/logos/vh.png" alt=""></h1>-->
+  <!--            </div>-->
+  <!--            <div class="col-sm-4 col-xs-6 col-md-2 opa-8">-->
+  <!--              <h1 class="center-text"><img src="/img/logos/ad.png" alt=""></h1>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+
+    <!-- /LOGOS -->
+
+
+    <!-- PRICING -->
+
+  <!--  <div id="price" class="page-pri pad-bottom-2">-->
+  <!--    <div class="parallax_wrap">-->
+  <!--      <div class="container">-->
+  <!--      <div class="row pad-hun-p">-->
+  <!--          <div class="title-tes clearfix pad-top-s marg-bot"> -->
+  <!--             <h1>Pricing Table</h1>-->
+  <!--          <p class="under-pr">Lorem ipsum dolor sit amet .Lorem ipsum dolor sit amet, consectetuer adipiscing  ipsum dolor sit amet .Lorem ipsum dolor sit amet.-->
+  <!--          </div>-->
+  <!--            <div class="price-t price-t-b col-sm-12 col-xs-12 col-md-4">-->
+  <!--              <i class="icon-cloud"></i>-->
+  <!--              <h2><span>Basic</span> Plan</h2>-->
+  <!--              <p>$ <span>13</span></p>-->
+  <!--              <a class="pri-1" href="#">Order Now</a>-->
+  <!--              <a class="pri-2" href="#">read more</a>-->
+  <!--            </div>-->
+  <!--            <div class="price-t price-t-b col-sm-12 col-xs-12 col-md-4">-->
+  <!--              <i class="icon-star"></i>-->
+  <!--              <h2><span>Advance</span> Plan</h2>-->
+  <!--              <p>$ <span>22</span></p>-->
+  <!--              <a class="pri-1" href="#">Order Now</a>-->
+  <!--              <a class="pri-2" href="#">read more</a>-->
+  <!--            </div>-->
+  <!--            <div class="price-t col-sm-12 col-xs-12 col-md-4">-->
+  <!--              <i class="icon-briefcase"></i>-->
+  <!--              <h2><span>Profesional</span> Plan</h2>-->
+  <!--              <p>$ <span>109</span></p>-->
+  <!--              <a class="pri-1" href="#">Order Now</a>-->
+  <!--              <a class="pri-2" href="#">read more</a>-->
+  <!--            </div>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+
+    <!-- /PRICING -->
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="pad-hun page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 pad-top">
+            <div class="title-cont clearfix">
+            <h1 data-animated="bounceIn">Let's Get In Touch!</h1>
+            <p class="under-l"  data-animated="bounceIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit<strong> Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit  sit amet, consectetur adipiscing </p><br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="form-container"> 
+            <form id="contact-form" method="post" action="contact.php" class="contact-form">
+              <div class="result"></div>
+                  <div class="col-md-4 pad-top">
+                    <div class="form-group">
+                      <input type="text" name="Name" id="Name"  placeholder="Name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="Email" id="Email"  placeholder="Email" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-md-6 pad-top">
+                    <div class="form-group">
+                      <textarea name="Message" rows="4" cols="5" id="Message"  placeholder="Message" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-2 pad-top">
+                    <div class="form-group">
+                     <input type="submit" name="submit" value="Submit" class="btn btn-dark"  />
+                    </div>
+                  </div>
+              </form>
+            </div>
+        </div>
+        <br><br>
+        <h1 class="under-llll">our via e-mail : you@mail.com</h1><br>
+      </div>
+    </section>
+
+    <!-- /CONTACT -->
+
+
+    <!-- MAP -->
+
+  <!--  <section>-->
+  <!--    <div id="contact_wrap">-->
+  <!--      <div class="container pad-top">-->
+  <!--      <div class="riz-text pad-top-map">-->
+  <!--      </div>-->
+  <!--      </div>-->
+  <!--      <div id="map_canvas"></div>-->
+  <!--    </div>-->
+  <!--  </section>-->
+
+    <!-- /MAP -->
+
+
+    <!-- FOOTER -->
+
+    <footer id="footer">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <p id="copyright">
+                  We <strong><i class="icon-heart"></i></strong> Moderno<a class="scroll" href="#home"><img src="/img/tt.png" alt=""></a>
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <ul class="socicals">
+                  <li><a href="#" class="icon-facebook"></a></li>
+                  <li><a href="#" class="icon-flickr"></a></li>
+                  <li><a href="#" class="icon-pinterest"></a></li>
+                  <li><a href="#" class="icon-google-plus"></a></li>
+                  <li><a href="#" class="icon-twitter"></a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- /FOOTER -->
+
+
+    <!-- JS -->
+    
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization', 'version':'1.1','packages':['timeline']}]}"></script>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="/js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="/js/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.timelinr-0.9.53.js"></script>
+    <script type="text/javascript" src="/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="/js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/js/retina.min.js"></script>
+    <script type="text/javascript" src="/js/supersized.3.2.7.min.js"></script>
+    <script type="text/javascript" src="/js/supersized.shutter.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="/js/jquery.fittext.js"></script>
+    <script src="/js/jquery.superslides.min.js"></script>
+    <script src="/js/jquery.sudoslider.min.js"></script>
+    <script src="/js/service-js.js"></script>
+    <script src="/js/timeline.js"></script>
+    <script src="/js/moment.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      var timeline = new timeline(
+        $('#city').val(),
+        $('#day').val(),
+        $('#limit').val(),
+        $('#hour').val(),
+        'timeline'
+      );
+      
+      google.setOnLoadCallback(timeline.draw);
+    </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+<!--<html>-->
+<!--  <head>-->
+    
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+    
+    
+<!--  </head>-->
+<!--  <body>-->
+
+  
+
+
+<!--  <div>{{date}} + {{limit}}h</div>-->
+<!--  <div id="timeline" style="width=90%;height: 500px;"></div>-->
+
+<!--  <script type="text/javascript">-->
+<!--    var timeline = new timeline(-->
+<!--      $('#city').val(),-->
+<!--      $('#day').val(),-->
+<!--      $('#limit').val(),-->
+<!--      $('#hour').val(),-->
+<!--      'timeline'-->
+<!--    );-->
+    
+<!--    google.setOnLoadCallback(timeline.draw);-->
+<!--  </script>-->
+
+<!--  {{#facilities}}-->
+<!--      <h1>{{name}}</h1>-->
+<!--      <h4>{{location.city}}</h4>-->
+<!--      <h4>{{web}}</h4>-->
+<!--  {{/facilities}}-->
+
+<!--  </body>-->
+<!--</html>-->
