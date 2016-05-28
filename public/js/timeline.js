@@ -88,7 +88,7 @@ var Timeline = function(city, day, limit, hour, containerName) {
     
     function showUrlInDialog(id){
       $.ajax({
-        url: 'facilities/' + id,
+        url: '/facilities/' + id,
         success: function(data) {
           document.body.style.cursor = "default"
           $("#facility-dialog").html(data);

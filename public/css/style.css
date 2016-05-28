@@ -1121,6 +1121,10 @@ strong {
             transition:.8s all linear;
 }
 
+.centered-btn{
+	text-align: center;
+}
+
 .min-s {
 	opacity: 0.6;
     -webkit-transition:0.3s all linear;
