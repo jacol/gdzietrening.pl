@@ -689,6 +689,7 @@
 		rart.initPlugin();
 		rart.shortcode();
 		rart.fullscreen_slider();
+		renderIfNeeded();
 	});
 
 	/*------------------LOADER------------------*/
@@ -696,7 +697,7 @@
   //<![CDATA[
     $(window).load(function() {
         $('body').css({'overflow':'visible'});
-        $('#preloader').delay(2000).animate({ height: 0}, 1000, 'easeOutCirc');
+        $('#preloader').delay(0).animate({ height: 0}, 1000, 'easeOutCirc');
         rart.googleMap();
       })
   //]]>
@@ -773,19 +774,19 @@ $.fn.countTo.defaults = {
     onComplete: null,  
 };
 
-renderNow = function(){
+var renderNow = function(){
 	renderTimeline('wro');
 }
 
-renderTomorrowMorning = function(){
+var renderTomorrowMorning = function(){
 	renderTimeline('wro', $('#dayp1').val(), 10, 5);
 }
 
-renderTomorrowAfternoon = function(){
+var renderTomorrowAfternoon = function(){
 	renderTimeline('wro', $('#dayp1').val(), 10, 14);
 }
 
-renderTimeline = function(city, day, limit, hour){
+var renderTimeline = function(city, day, limit, hour){
 	
   $('#start-page').hide();
   $('#schedule-page').show();
@@ -813,4 +814,23 @@ renderTimeline = function(city, day, limit, hour){
   
   //google.setOnLoadCallback(timeline.draw);
   timeline.draw();
+}
+
+var moveForward = function(){
+	window.location = $('#forwardLink').val();
+}
+
+var moveBackward = function(){
+	window.location = $('#backwardLink').val();
+}
+
+var renderIfNeeded = function(){
+	if($('#render').val() === 'true'){
+		renderTimeline(
+			$('#city').val(),
+			$('#day').val(),
+			$('#limit').val(),
+			$('#hour').val()
+		);
+	}
 }

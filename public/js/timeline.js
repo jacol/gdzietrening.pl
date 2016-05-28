@@ -20,7 +20,10 @@ var Timeline = function(city, day, limit, hour, containerName) {
             
             var timelineData = [];
             
-            data.forEach(function(item){
+            $("#forwardLink").val(data.forwardParams);
+            $("#backwardLink").val(data.backwardParams);
+            
+            data.scheduleCollection.forEach(function(item){
               var dateFrom = moment(item[2]).toDate();
               var dateTo = moment(item[3]).toDate();
               var tooltipHtml = item[5];
@@ -51,7 +54,7 @@ var Timeline = function(city, day, limit, hour, containerName) {
             function myClick(e){
                 var selectedItem = chart.getSelection()[0];
                   if (selectedItem) {
-                    var id = data[selectedItem.row][4];
+                    var id = data.scheduleCollection[selectedItem.row][4];
                     showUrlInDialog(id);
                     google.visualization.events.removeListener(selectEvent);
                     chart.setSelection([]);

@@ -2,7 +2,8 @@ var express = require('express')
   , router = express.Router()
   , facilities = require('../models/facilities')
   , weekDay = require('../lib/weekDay')
-  , schedule = require('../lib/schedule');
+  , schedule = require('../lib/schedule')
+  , paramsFactory = require('../lib/paramsFactory');
 
 router.get('/:city/:day/:hour/:limit', function(req, res) {
   var limit = parseInt(req.params.limit);
@@ -18,9 +19,18 @@ router.get('/:city/:day/:hour/:limit', function(req, res) {
     else{
       var date = weekDay.getDateForDay(day, new Date(new Date().setHours(hour, 0, 0, 0)));
       var scheduleCollection = schedule.create(facilities, date, limit);
-    	res.send(JSON.stringify(scheduleCollection));
+      
+      var result = {
+        scheduleCollection: scheduleCollection,
+        forwardParams: paramsFactory.createForwardParams(city, day, hour, limit),
+        backwardParams: paramsFactory.createBackwardParams(city, day, hour, limit)
+      };
+      
+    	res.send(JSON.stringify(result));
     }
   });
 });
+
+
 
 module.exports = router;

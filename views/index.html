@@ -37,7 +37,10 @@
     <input type="hidden" id="hour" value="{{hour}}">
     <input type="hidden" id="city" value="{{city}}">
     <input type="hidden" id="limit" value="{{limit}}">
+    <input type="hidden" id="render" value="{{render}}">
 
+    <input type="hidden" id="forwardLink" value="{{forwardLink}}">
+    <input type="hidden" id="backwardLink" value="{{backwardLink}}">
 
     <div id="preloader"></div>
     <a id="top"></a>
@@ -80,7 +83,7 @@
         </div>
         
         <div id="schedule-page" style="display:none;">
-          <div  style="width:90%;margin: 0 auto;">
+          <div  style="width:90%;margin:auto;">
             <div class="call-action">
               <a class="btn-sta-mod scroll" href="#" onclick="moveBackward()"><<</a>
               <div class="btn-sta-mod scroll" id="chart-day-name"></div>
