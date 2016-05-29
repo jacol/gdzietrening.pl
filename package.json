@@ -2,7 +2,7 @@
   "name": "gdzietrening",
   "version": "0.0.1",
   "description": "Simple and easy!",
-  "main": "server.js",
+  "main": "app.js",
   "repository": "",
   "author": "Jacek Nikitiuk (jacek@nikitiuk.pl)",
   "dependencies": {

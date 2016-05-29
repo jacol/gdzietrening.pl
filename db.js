@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var UAT = 'mongodb://gdzietrening:gdzietrening!1@ds035573.mongolab.com:35573/gdzietrening';
+var UAT = process.env.DB_UAT;
 var DEV = 'mongodb://jacol-gdzietrening-1826025';
 
 exports.connect = function(env, cb){

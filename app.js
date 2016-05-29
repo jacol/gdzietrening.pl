@@ -2,7 +2,7 @@ var express = require('express')
   , app = express()
   , http = require('http')
   , mustacheExpress = require('mustache-express')
-  , db = require('./db')
+  , db = require('./db');
 
 app.engine('html', mustacheExpress());
 
