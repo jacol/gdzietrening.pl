@@ -16,7 +16,7 @@ app.use(require('./controllers'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-db.connect('UAT', function(err){
+db.connect(process.env.NODE_ENV, function(err){
   if(err)throw err;
   else{
     var server = http.createServer(app);

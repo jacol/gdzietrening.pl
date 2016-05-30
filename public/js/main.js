@@ -456,9 +456,6 @@
 	};
 
 
-
-
-
 	/*------------------CONTACT ------------------*/
 
 
@@ -476,9 +473,9 @@
 				success: function(msg) {
 					var result;
 	    			if(msg == 'OK') {
-	    				result = '<div class="alert-message success">Message was sent!</div>';
+	    				result = '<div class="alert-message success">Dziękujemy!</div>';
 	    			} else {
-	    				result = '<div class="alert-message warning">' + msg + '</div>';
+	    				result = '<div class="alert-message warning">Nieoczekiwany błąd. Spróbuj ponownie.</div>';
 	    			}
 	    			$this.find('.result').html(result);
 				}

@@ -20,8 +20,8 @@ router.post('/', function(req, res) {
 
       // setup e-mail data with unicode symbols
       var mailOptions = {
-          from: '"gdzietrening.pl" <automat@gdzietrening.pl>', // sender address
-          to: 'kontakt@gdzietrening.pl, jacek@nikitiuk.pl', // list of receivers
+          from: '"Automat gdzietrening.pl" <automat@gdzietrening.pl>', // sender address
+          to: 'kontakt@gdzietrening.pl', // list of receivers
           subject: 'Formularz gdzietrening.pl ✔', // Subject line
           text: data.name + ' (' + data.email + ') pisze: ' + data.message, // plaintext body
           // html: '<b>Hello world 🐴</b>' // html body
@@ -45,7 +45,7 @@ var _createSmtpConfig = function(){
     //secure: true, // use SSL
     auth: {
         user: 'automat@gdzietrening.pl',
-        pass: 'Jacek4utom4t'
+        pass: process.env.MAIL_PASS
     }
   };
 };
