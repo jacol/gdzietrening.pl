@@ -21,9 +21,7 @@ router.get('/:city/:day/:hour/:limit', function(req, res) {
       var scheduleCollection = schedule.create(facilities, date, limit);
       
       var result = {
-        scheduleCollection: scheduleCollection,
-        forwardParams: paramsFactory.createForwardParams(city, day, hour, limit),
-        backwardParams: paramsFactory.createBackwardParams(city, day, hour, limit)
+        scheduleCollection: scheduleCollection
       };
       
     	res.send(JSON.stringify(result));

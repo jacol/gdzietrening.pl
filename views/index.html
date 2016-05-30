@@ -31,16 +31,12 @@
 
   </head>
   <body class="onepage">
-
     <input type="hidden" id="day" value="{{day}}">
     <input type="hidden" id="dayp1" value="{{dayp1}}">
     <input type="hidden" id="hour" value="{{hour}}">
     <input type="hidden" id="city" value="{{city}}">
     <input type="hidden" id="limit" value="{{limit}}">
     <input type="hidden" id="render" value="{{render}}">
-
-    <input type="hidden" id="forwardLink" value="{{forwardLink}}">
-    <input type="hidden" id="backwardLink" value="{{backwardLink}}">
 
     <div id="preloader"></div>
     <a id="top"></a>
@@ -73,9 +69,9 @@
                     </ul>
                   </div>                
                     <div class="call-action">
-                      <a class="btn-sta scroll" href="#" onclick="renderNow()">#wroclaw teraz</a>
-                      <a class="btn-sta scroll" href="#" onclick="renderTomorrowMorning()">#wroclaw jutro rano</a>
-                      <a class="btn-sta scroll" href="#" onclick="renderTomorrowAfternoon()">#wroclaw jutro po poludniu</a>
+                      <a class="btn-sta scroll" href="{{wrocNowLink}}">#wroclaw teraz</a>
+                      <a class="btn-sta scroll" href="{{wrocTomorrowMorningLink}}">#wroclaw jutro rano</a>
+                      <a class="btn-sta scroll" href="{{wrocTomorrowAfternoonLink}}">#wroclaw jutro po poludniu</a>
                     </div>
                 </div>
               </div>
@@ -83,12 +79,13 @@
         </div>
         
         <div id="schedule-page" style="display:none;">
-          <div  style="width:90%;margin:auto;">
+          <div style="width:90%;margin-left:5%;">
             <div class="call-action">
-              <a class="btn-sta-mod scroll centered-btn" href="#" onclick="moveBackward()"><<</a>
-              <div class="btn-sta-mod scroll centered-btn" id="chart-day-name"></div>
-              <a class="btn-sta-mod scroll centered-btn" href="#" onclick="moveForward()">>></a>
-              
+              <a class="btn-sta-mod-2 scroll" href="{{backwardLink}}"><<</a>
+              <div class="btn-sta-mod-2 scroll" id="chart-city-name"></div>
+              <div class="btn-sta-mod-2 scroll" id="chart-day-name"></div>
+              <div class="btn-sta-mod-2 scroll" id="chart-hour"></div>
+              <a class="btn-sta-mod-2 scroll" href="{{forwardLink}}">>></a>
             </div>
           </div>
           
@@ -110,8 +107,8 @@
         <div class="row">
           <div class="col-md-12 pad-top">
             <div class="title-cont clearfix">
-            <h1 data-animated="bounceIn">Let's Get In Touch!</h1>
-            <p class="under-l"  data-animated="bounceIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit<strong> Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit  sit amet, consectetur adipiscing </p><br><br>
+            <h1 data-animated="bounceIn">Napisz do nas!</h1>
+            <!--<p class="under-l"  data-animated="bounceIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit<strong> Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit  sit amet, consectetur adipiscing </p><br><br>-->
             </div>
           </div>
         </div>
@@ -119,31 +116,33 @@
       <div class="container">
         <div class="row">
             <div class="form-container"> 
-            <form id="contact-form" method="post" action="contact.php" class="contact-form">
+            <form id="contact-form" method="post" action="/contact" class="contact-form">
+              <fieldset>
               <div class="result"></div>
                   <div class="col-md-4 pad-top">
                     <div class="form-group">
-                      <input type="text" name="Name" id="Name"  placeholder="Name" class="form-control" />
+                      <input type="text" name="name" id="name"  placeholder="Ksywa" class="form-control" />
                     </div>
                     <div class="form-group">
-                      <input type="text" name="Email" id="Email"  placeholder="Email" class="form-control" />
+                      <input type="text" name="email" id="email"  placeholder="Email" class="form-control" />
                     </div>
                   </div>
                   <div class="col-md-6 pad-top">
                     <div class="form-group">
-                      <textarea name="Message" rows="4" cols="5" id="Message"  placeholder="Message" class="form-control"></textarea>
+                      <textarea name="message" rows="4" cols="5" id="message"  placeholder="" class="form-control"></textarea>
                     </div>
                   </div>
                   <div class="col-md-2 pad-top">
                     <div class="form-group">
-                     <input type="submit" name="submit" value="Submit" class="btn btn-dark"  />
+                     <input type="submit" name="submit" value="Wyslij" class="btn btn-dark"  />
                     </div>
                   </div>
+                </fieldset>
               </form>
             </div>
         </div>
         <br><br>
-        <h1 class="under-llll">our via e-mail : you@mail.com</h1><br>
+        <h1 class="under-llll">lub pisz na: kontakt@gdzietrening.pl</h1><br>
       </div>
     </section>
 

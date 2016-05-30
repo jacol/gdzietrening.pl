@@ -20,9 +20,6 @@ var Timeline = function(city, day, limit, hour, containerName) {
             
             var timelineData = [];
             
-            $("#forwardLink").val(data.forwardParams);
-            $("#backwardLink").val(data.backwardParams);
-            
             data.scheduleCollection.forEach(function(item){
               var dateFrom = moment(item[2]).toDate();
               var dateTo = moment(item[3]).toDate();

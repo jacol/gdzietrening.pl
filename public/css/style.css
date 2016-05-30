@@ -1121,9 +1121,28 @@ strong {
             transition:.8s all linear;
 }
 
-.centered-btn{
+.call-action .btn-sta-mod-2
+{
+	margin-top: 30px;
+	display: inline-block;
+	font-size: 22px;
+	padding: 15px 15px;
+	font-family: Segoe UI,Helvetica,Arial,sans-serif;
+	font-weight: 300;
+	background: rgba(30,30,30,.391);
+	color: #fff;
+	width:317px;
 	text-align: center;
 }
+.call-action .btn-sta-mod-2:hover
+{
+	background: rgba(255,84,17,0.9);
+	color: #fff;
+    -webkit-transition:.8s all linear;
+        -moz-transition:.8s all linear;
+            transition:.8s all linear;
+}
+
 
 .min-s {
 	opacity: 0.6;

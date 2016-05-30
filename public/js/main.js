@@ -468,7 +468,7 @@
 		var $this = $(this);
 		$this.submit(function() {
 			var str = $this.serialize();
-			$this.find('.result').html('<h1 class="text-center"><img src="img/pending.gif" alt="loading"></h1>')
+			$this.find('.result').html('<h1 class="text-center"><img src="/img/loading.gif" alt="loading"></h1>')
 			$.ajax({
 				type:	"POST",
 				url:	$this.attr('action'),
@@ -774,16 +774,29 @@ $.fn.countTo.defaults = {
     onComplete: null,  
 };
 
-var renderNow = function(){
-	renderTimeline('wro');
+var getCity = function(){
+	return $('#city').val();
 }
 
-var renderTomorrowMorning = function(){
-	renderTimeline('wro', $('#dayp1').val(), 10, 5);
+var getDay = function(){
+	return	$('#day').val();
 }
 
-var renderTomorrowAfternoon = function(){
-	renderTimeline('wro', $('#dayp1').val(), 10, 14);
+var getDayP1 = function(){
+	return	$('#dayp1').val();
+}
+
+var getHour = function(){
+	return $('#hour').val();
+}
+
+var getLimit = function(){
+	return $('#limit').val();
+}
+
+var formatHour = function(hour){
+	if(hour.length == 1) return '0' + hour + ':00';
+	else return hour + ':00';
 }
 
 var renderTimeline = function(city, day, limit, hour){
@@ -793,16 +806,23 @@ var renderTimeline = function(city, day, limit, hour){
   
   var dayName;
   switch(day){
-  	case 'mon': dayName = 'poniedziałek'; break;
-  	case 'tue': dayName = 'wtorek'; break;
-  	case 'wed': dayName = 'środa'; break;
-  	case 'thu': dayName = 'czwartek'; break;
-  	case 'fri': dayName = 'piątek'; break;
-  	case 'sat': dayName = 'sobota'; break;
-  	case 'sun': dayName = 'niedziela'; break;
+  	case 'poniedzialek': dayName = 'poniedziałek'; break;
+  	case 'wtorek': dayName = 'wtorek'; break;
+  	case 'sroda': dayName = 'środa'; break;
+  	case 'czwartek': dayName = 'czwartek'; break;
+  	case 'piatek': dayName = 'piątek'; break;
+  	case 'sobota': dayName = 'sobota'; break;
+  	case 'niedziela': dayName = 'niedziela'; break;
+  }
+  
+  var cityName = city;
+  switch(city){
+  	case 'wroclaw': cityName = 'Wrocław'; break;
   }
   
   $('#chart-day-name').html(dayName);
+  $('#chart-city-name').html(cityName);
+  $('#chart-hour').html(formatHour(getHour()) + ' +' + getLimit() + ' godzin');
   
   var timeline = new Timeline(
     city || $('#city').val(),
@@ -814,14 +834,6 @@ var renderTimeline = function(city, day, limit, hour){
   
   //google.setOnLoadCallback(timeline.draw);
   timeline.draw();
-}
-
-var moveForward = function(){
-	window.location = $('#forwardLink').val();
-}
-
-var moveBackward = function(){
-	window.location = $('#backwardLink').val();
 }
 
 var renderIfNeeded = function(){
