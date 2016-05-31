@@ -3349,3 +3349,7 @@ blockquote p {
 .timeline-tooltip-title{
 	font-weight: bold;
 }
+
+#dialogMap {
+	margin-top:15px;
+}

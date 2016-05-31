@@ -3,4 +3,12 @@
   <div>{{facility.location.city}}, {{facility.location.address}}</div>
   <div><a href="{{facility.web}}">{{facility.web}}</a></div>
   
+  <iframe id="dialogMap"
+    width="600"
+    height="400"
+    frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCTbvqyVgbEWBRH1heJ5Vdur62mQP2wwMg&q={{facility.location.city}},{{facility.location.address}}&center={{facility.location.lat}}, {{facility.location.lon}}"
+    allowfullscreen>
+  </iframe>
+  
 </div>
