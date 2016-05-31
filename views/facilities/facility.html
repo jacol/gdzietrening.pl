@@ -1,13 +1,13 @@
 <div id="facility-dialog-data" title="{{facility.name}}">
-  <div>{{facility.name}}</div>
-  <div>{{facility.location.city}}, {{facility.location.address}}</div>
-  <div><a href="{{facility.web}}">{{facility.web}}</a></div>
-  
+  <!--<div>{{facility.name}}</div>-->
+  <!--<div>{{facility.location.city}}, {{facility.location.address}}</div>-->
+  <!--<div><a href="{{facility.web}}">{{facility.web}}</a></div>-->
+
   <iframe id="dialogMap"
-    width="600"
-    height="400"
+    width="100%"
+    height="90%"
     frameborder="0" style="border:0"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCTbvqyVgbEWBRH1heJ5Vdur62mQP2wwMg&q={{facility.location.city}},{{facility.location.address}}&center={{facility.location.lat}}, {{facility.location.lon}}"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCTbvqyVgbEWBRH1heJ5Vdur62mQP2wwMg&q={{facility.name}}+{{facility.location.city}},{{facility.location.address}}"
     allowfullscreen>
   </iframe>
   
