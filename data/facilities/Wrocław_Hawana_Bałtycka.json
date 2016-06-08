@@ -1,12 +1,12 @@
 {
     "name": "Fitness Club Hawana",
     "location":{
-		"city": "Wrocław",
-		"address": "ul. Bałtycka 15",
-		"postal": "51-109",
-		"lon": 51.139261,
-		"lat": 17.031999
-	},
+"city": "Wrocław",
+"address": "ul. Bałtycka 15",
+"postal": "51-109",
+"lon": 51.139261,
+"lat": 17.031999
+},
     "phone": "+48 71 352 78 77",
     "web": "http://www.solarium-hawana.pl/",
     "type": ["fitness club", "siłownia"],
@@ -15,199 +15,214 @@
         "value": 0
     },
     "images": [
-		{
-		    "url": "FacilityImageStore\\1234567.jpg",
-		    "description": "Level 1 podczas rozgrzewki"
-		},
-		{
-		    "url": "FacilityImageStore\\2234567.jpg",
-		    "description": "Level 2 kończy WOD\"a"
-		}
+{
+   "url": "FacilityImageStore\\1234567.jpg",
+   "description": "Level 1 podczas rozgrzewki"
+},
+{
+   "url": "FacilityImageStore\\2234567.jpg",
+   "description": "Level 2 kończy WOD\"a"
+}
     ],
     "schedule": {
         "mon": [
-				{
-				    "name": "SHAPE ***",
-				    "time": "09:20-10:10",
-				    "description": "Bettina"
-				},
-				{
-				    "name": "SHAPE ***",
-				    "time": "17:00-17:50",
-				    "description": "Justyna"
-				},
-				{
-				    "name": "PILATES",
-				    "time": "18:00-18:50",
-				    "description": "Justyna"
-				},
-				{
-				    "name": "SPINNING ***",
-				    "time": "19:00-19:50",
-				    "description": "Morena"
-				},
-				{
-				    "name": "SHAPE ***",
-				    "time": "20:00-20:50",
-				    "description": "Judyta"
-				},
-				{
-				    "name": "ZUMBA",
-				    "time": "21:00-21:50",
-				    "description": "Ada"
-				}
+{
+   "name": "ATAK BRZUCH UDA, POŚLADKI **",
+   "time": "09:20-10:10",
+   "description": "Beti"
+},
+{
+   "name": "JUMPING ***",
+   "time": "10:20-11:10",
+   "description": "Beti"
+},
+{
+   "name": "TBC **",
+   "time": "17:00-17:50",
+   "description": "Justyna"
+},
+{
+   "name": "PILATES",
+   "time": "18:00-18:50",
+   "description": "Justyna"
+},
+{
+   "name": "SHAPE ***",
+   "time": "19:00-19:50",
+   "description": "Judyta"
+},
+{
+   "name": "JUMPING ***",
+   "time": "20:00-20:50",
+   "description": "Ada"
+},
+{
+   "name": "ZUMBA",
+   "time": "21:00-21:50",
+   "description": "Ada"
+}
         ],
         "tue": [
-				{
-				    "name": "BODY SHAPE **",
-				    "time": "09:20-10:10",
-				    "description": "Paulina"
-				},
-				{
-				    "name": "SHAPE **",
-				    "time": "16:00-16:50",
-				    "description": "Paulina"
-				},
-				{
-				    "name": "ATC PŁASKI BRZUCH ***",
-				    "time": "17:00-17:50",
-				    "description": "Paulina"
-				},
-				{
-					"name": "SPINNING ***",
-					"time": "18:00-18:50",
-					"description": "Bettina"
-				},
-				{
-					"name": "TBC ***",
-					"time": "19:00-19:50",
-					"description": "Beata"
-				},
-				{
-					"name": "SHAPE **",
-					"time": "20:00-20:50",
-					"description": "Beata"
-				}
+{
+   "name": "BODY SHAPE **",
+   "time": "09:20-10:10",
+   "description": "Paulina"
+},
+{
+   "name": "ATC PŁASKI BRZUCH **",
+   "time": "17:00-17:50",
+   "description": "Paulina"
+},
+{
+"name": "SPINNING ***",
+"time": "18:00-18:50",
+"description": "Paweł"
+},
+{
+"name": "HAWANA **",
+"time": "19:00-19:50",
+"description": "Emilka"
+},
+{
+"name": "ZUMBA",
+"time": "20:00-20:50",
+"description": "Emilka"
+}
+{
+   "name": "JUMPING ***",
+   "time": "21:00-21:50",
+   "description": "Beti"
+}
         ],
         "wed": [
-				{
-				    "name": "ATC PŁASKI BRZUCH **",
-				    "time": "16:00-16:50",
-				    "description": "Magda"
-				},
-				{
-				    "name": "CELU STOP **",
-				    "time": "17:00-17:50",
-				    "description": "Paulina"
-				},
-				{
-				    "name": "ZUMBA",
-				    "time": "18:00-18:50",
-				    "description": "Emilka"
-				},
-				{
-				    "name": "SHAPE **",
-				    "time": "19:00-19:50",
-				    "description": "Ula"
-				},
-				{
-				    "name": "STEP **",
-				    "time": "20:00-20:50",
-				    "description": "Ula"
-				},
-				{
-				    "name": "JOGA",
-				    "time": "21:00-21:50",
-				    "description": "Karolina"
-				}
+{
+   "name": "JUMPING ***",
+   "time": "09:20-10:10",
+   "description": "Beti"
+}
+{
+   "name": "JUMPING KIDS 6+",
+   "time": "16:00-16:50",
+   "description": "Ada"
+},
+{
+   "name": "ATC **",
+   "time": "17:00-17:50",
+   "description": "Martyna"
+},
+{
+   "name": "PILATES",
+   "time": "18:00-18:50",
+   "description": "Justyna"
+},
+{
+   "name": "TBC ***",
+   "time": "19:00-19:50",
+   "description": "Beata"
+},
+{
+   "name": "JUMPING ***",
+   "time": "20:00-20:50",
+   "description": "Emilka"
+},
+{
+   "name": "JOGA",
+   "time": "21:00-21:50",
+   "description": "Klaudia"
+}
         ],
         "thu": [
-				{
-				    "name": "TBC **",
-				    "time": "09:20-10:10",
-				    "description": "Julia"
-				},
-				{
-				    "name": "ABT **",
-				    "time": "16:00-16:50",
-				    "description": "Beata G."
-				},
-				{
-				    "name": "PILATES",
-				    "time": "17:00-17:50",
-				    "description": "Beata G."
-				},
-				{
-				    "name": "SPINNING",
-				    "time": "18:00-18:50",
-				    "description": "Morena"
-				},
-				{
-				    "name": "TBC ***",
-				    "time": "19:00-19:50",
-				    "description": "Paulina"
-				},
-				{
-				    "name": "CELU STOP **",
-				    "time": "20:00-20:50",
-				    "description": "Paulina"
-				},
-				{
-				    "name": "ZUMBA",
-				    "time": "21:00-21:50",
-				    "description": "Ada"
-				}
+{
+   "name": "TBC **",
+   "time": "09:20-10:10",
+   "description": "Beti"
+},
+{
+   "name": "ATC, PŁASKI BRZUCH **",
+   "time": "17:00-17:50",
+   "description": "Emilka"
+},
+{
+   "name": "SPINNING ***",
+   "time": "18:00-18:50",
+   "description": "Gosia"
+},
+{
+   "name": "SHAPE ***",
+   "time": "19:00-19:50",
+   "description": "Paulina"
+},
+{
+   "name": "ZDROWY KRĘGOSŁUP",
+   "time": "20:00-20:50",
+   "description": "Paulina"
+},
+{
+   "name": "JUMPING ***",
+   "time": "21:00-21:50",
+   "description": "Ada"
+}
         ],
         "fri": [
-				{
-				    "name": "ATC ***",
-				    "time": "18:00-18:50",
-				    "description": "Judyta"
-				},
-				{
-				    "name": "CAPOEIRA",
-				    "time": "19:00-19:50",
-				    "description": "Krzysiek"
-				},
-				{
-				    "name": "JOGA",
-				    "time": "20:00-20:50",
-				    "description": "Karolina"
-				}
+{
+   "name": "ATC ***",
+   "time": "17:00-17:50",
+   "description": "Ula"
+},
+{
+   "name": "JUMPING ***",
+   "time": "18:00-18:50",
+   "description": "Ula"
+},
+{
+   "name": "CELLU STOP **",
+   "time": "19:00-19:50",
+   "description": "Jola"
+},
+{
+   "name": "JOGA",
+   "time": "20:00-20:50",
+   "description": "Klaudia"
+}
         ],
         "sat": [
-				{
-				    "name": "ATC & PŁASKI BRZUCH**",
-				    "time": "09:20-10:10",
-				    "description": "Justyna"
-				},
-				{
-				    "name": "PILATES",
-				    "time": "10:20-11:10",
-				    "description": "Justyna"
-				},
-				{
-				    "name": "CAPOEIRA DLA DZIECI",
-				    "time": "11:30-12:20",
-				    "description": "Krzysiek"
-				}
+{
+   "name": "ATC & PŁASKI BRZUCH **",
+   "time": "09:20-10:10",
+   "description": "Jola"
+},
+{
+   "name": "JUMPING ***",
+   "time": "10:20-11:10",
+   "description": "Ada/Beti"
+},
+{
+   "name": "JUMPING KIDS 6+",
+   "time": "11:20-12:10",
+   "description": "Ada/Beti"
+},
+{
+   "name": "BODY WORKOUT **",
+   "time": "18:00-18:50",
+   "description": "Martyna"
+}
         ],
         "sun": [
-				{
-				    "name": "ZUMBA",
-				    "time": "18:00-18:50",
-				    "description": "Emilka"
-				},
-				{
-				    "name": "ATAK NA BRZUCH, POŚLADKI I UDA **",
-				    "time": "19:00-19:50",
-				    "description": "Magda"
-				},
-				{
-				    "name": "SPINNING ***",
-				    "time": "20:00-20:50",
-				    "description": "Bettina"
-				}
+{
+   "name": "MIX JUMPING ***",
+   "time": "17:00-17:50",
+   "description": "Emilka"
+},
+{
+   "name": "ZUMBA",
+   "time": "18:00-18:50",
+   "description": "Emilka"
+},
+{
+   "name": "ATAK NA BRZUCH, UDA, POŚLADKI **",
+   "time": "19:00-19:50",
+   "description": "Emilka"
+}
         ]
     },
 
@@ -222,25 +237,25 @@
     },
 
     "systems": [
-		{
-		    "name": "MultiSport",
-		    "payment": "none"
-		},
-		{
-		    "name": "OKSystem",
-		    "payment": "none"
-		},
-		{
-		    "name": "FitProfit",
-		    "payment": "none"
-		},
-		{
-		    "name": "FitFlex",
-		    "payment": "none"
-		},
-		{
-		    "name": "FitSport",
-		    "payment": "none"
-		}
+{
+   "name": "MultiSport",
+   "payment": "none"
+},
+{
+   "name": "OKSystem",
+   "payment": "none"
+},
+{
+   "name": "FitProfit",
+   "payment": "none"
+},
+{
+   "name": "FitFlex",
+   "payment": "none"
+},
+{
+   "name": "FitSport",
+   "payment": "none"
+}
     ]
 }
