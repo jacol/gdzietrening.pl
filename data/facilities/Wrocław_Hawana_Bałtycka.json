@@ -32,11 +32,6 @@
    "description": "Beti"
 },
 {
-   "name": "JUMPING ***",
-   "time": "10:20-11:10",
-   "description": "Beti"
-},
-{
    "name": "TBC **",
    "time": "17:00-17:50",
    "description": "Justyna"
@@ -76,10 +71,10 @@
 {
 "name": "SPINNING ***",
 "time": "18:00-18:50",
-"description": "Paweł"
+"description": "Darek"
 },
 {
-"name": "HAWANA **",
+"name": "TRENING OBWODOWY **",
 "time": "19:00-19:50",
 "description": "Emilka"
 },
@@ -165,7 +160,7 @@
         ],
         "fri": [
 {
-   "name": "ATC ***",
+   "name": "ATAK BRZUCH, UDA, POŚLADKI **",
    "time": "17:00-17:50",
    "description": "Ula"
 },
